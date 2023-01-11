@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        header {
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-position: center center;
+        }
+
+        nav {
+            width: 100%;
+            height: 15vh;
+
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        nav .logo {
+            width: 25%;
+            text-align: center;
+        }
+
+        nav .menu {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav .menu a {
+            width: 25%;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav .menu a:first-child {
+            color: rgb(248, 13, 193);
+            ;
+        }
+
+        main {
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        section h1 {
+            margin: 30px 0 20px 0;
+            font-size: 55px;
+            font-weight: 700;
+            text-shadow: 2px 1px 5px black;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 200;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        section p {
+            font-size: 25px;
+            word-spacing: 2px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        section a {
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all .5s ease;
+        }
+
+        section .btn1 {
+            background-color: rgb(123, 225, 146);
+           
+        }
+
+        section .btn2 {
+            background-color: aliceblue;
+        }
+
+        .cng_cont:after {
+            content: '';
+            animation: cng 10s infinite linear;
+            color: aqua;
+        }
+
+        @keyframes cng {
+            0% {
+                content: "Kathmandu";
+            }
+            25% {
+                content: "Pokhara";
+            }
+            50% {
+                content: "Dharan";
+            }
+            75% {
+                content: "Sarlahi";
+            }
+            100% {
+                content: "Lahan";
+            }
+        }
+        .btn1:hover{
+            background-color: blueviolet;
+        }
+        .btn2:hover{
+           background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="animated infinite bounce heartBeat">Mero Nepal</h1>
+            </div>
+            <div class="menu"><a href="#">Home</a>
+                <a href="#">Gallery</a>
+                <a href="#">Notice</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h3>Welcome To Nepal</h3>
+                <h1>Do come & visit <span class="cng_cont"></span></h1>
+                <p>Nepal once is not enough</p>
+                <a href="#" class="btn1">Learn More</a>
+                <a href="#" class="btn2">SignUp Here</a>
+            </section>
+        </main>
+    </header>
+</body>
+
+</html>
